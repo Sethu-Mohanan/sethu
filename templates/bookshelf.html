@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<head th:fragment="common-header">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>DC Bookstore</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="../static/css/bootstrap.min.css" rel="stylesheet" />
+
+	<link href="../static/css/non-responsive.css" rel="stylesheet" />
+
+	<!-- data table -->
+	<link href="../static/css/jquery.dataTables.min.css" rel="stylesheet" />
+	<link href="../static/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+
+	<link href="../static/css/font-awesome.min.css" rel="stylesheet" />
+
+	<!-- Custom styles for this template -->
+	<link href="../static/css/style.css" rel="stylesheet" />
+
+	<link rel="icon" href="../static/image/applie-touch-icon.png" />
+</head>
+
+<body>
+	<div>
+		<div class="page-top" style="width: 100%; height: 20px; background-color: #f46b42;"></div>
+		<!-- Static navbar -->
+		<nav class="navbar navbar-default navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">DC BOOKSTORE</a>
+				</div>
+				<div id="navbar">
+					<ul class="nav navbar-nav navbar-left">
+						<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown"
+								role="button" aria-haspopup="true" aria-expanded="false">BOOKS <span
+									class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="bookshelf.html">Browse the bookshelf</a></li>
+								<li><a href="hours.html">Store hours &#38; Directions</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+	
+							</ul>
+						</li>
+						<form class="navbar-form" action="#" method="post">
+							<div class="form-group">
+								<input type="text" name="keyword" class="form-control" placeholder="Book title" />
+							</div>
+							<button type="submit" class="btn btn-default">Search</button>
+						</form>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="shoppingCart.html">SHOPPING CART</a></li>
+						<li>
+							<a" href="#">MY
+								ACCOUNT</a>
+						</li>
+						<li><a href="myProfile.html">MY ACCOUNT</a></li>
+						<li><a href="#">LOGOUT</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+			<!--/.container-fluid -->
+		</nav>
+	</div>
+	<div class="container">
+		<div class="row" style="margin-bottom: -100px;">
+			<div class="col-xs-8">
+				<h2 class="section-headline">
+					<h2 class="section-headline">
+						<span
+							></span>
+					</h2>
+				</h2>
+			</div>
+		
+		</div>
+		<hr
+			style="position: absolute; width: 100%; height: 6px; background-color: #333; z-index: -1; margin-top: -80px;" />
+		<img class="img-responsive" src="../static/image/wood.png"
+			style="margin-top: -75px;" />
+
+		<div class="row" style="margin-top: 60px;">
+			<div class="col-xs-3">
+				<h3><label for="category">Category</label></h3>
+				<div class="list-group" id="category">
+					<a href="#"  class="list-group-item">All</a>
+					<a href="#"  class="list-group-item">Management</a>
+					<a href="#" class="list-group-item">Fiction</a>
+					<a href="#"  class="list-group-item">Engineering</a>
+					<a href="#" class="list-group-item">Programming</a>
+					<a href="#" class="list-group-item">Arts &amp; Literature</a>
+				</div>
+			</div>
+			
+			<div class="col-xs-9">
+				<div >
+					<h5 style="font-style: italic;">Oops, no result is found. Try
+						something else or try again later.</h5>
+				</div>
+
+				<table border="0" id="bookList">
+					<thead>
+						<tr>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="book-item"  >
+							<td>
+								<div >
+									<div class="row" style="margin-bottom: 50px;">
+										<div class="col-xs-3">
+											<a href="#"><img 
+												class="img-responsive shelf-book"
+												/></a>
+										</div>
+										<div class="col-xs-9" >
+											<a href="#"><h4
+													text="#"></h4></a> <span
+												text="#"></span>
+											<p text="#"></p>
+											<a href="#"><span
+												text="#"></span></a> <span
+												text="#"><span> pages</span></span><br />
+
+											<a href=""><span
+												style="font-size: x-large; color: #db3208;">$<span
+													></span></span></a>
+
+											<span style="text-decoration: line-through;">$<span
+												></span></span>
+
+											<p ></p>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- end of container -->
+<footer>
+	<div class="row">
+		<div class="col-xs-3 footerleft">
+			<div class="logofooter">
+				<a href="#"><img class="img-responsive" src="#" style="width: 200px;" /></a>
+			</div>
+			<p>
+				DC Independent Book Store. <br />Serving our customers with the
+				best.
+			</p>
+		</div>
+		<div class="col-xs-3 paddingtop-bottom">
+			<h6 class="heading7">CONTACT</h6>
+			<ul class="post">
+				<p>
+					<i class="fa fa-map-pin"></i> 123 XXX Ave<br /> Boston MA, USA
+					02112
+				</p>
+				<p>
+					<i class="fa fa-phone"></i> Phone (USA) : +1 999 999 9999
+				</p>
+				<p>
+					<i class="fa fa-envelope"></i> E-mail : info@lebookstore.com
+				</p>
+			</ul>
+		</div>
+		<div class="col-xs-3 paddingtop-bottom">
+			<h6 class="heading7">LINKS</h6>
+			<ul class="footer-ul">
+				<li><a href="#"> Privacy Policy</a></li>
+				<li><a href="#"> Terms &#38; Conditions</a></li>
+				<li><a href="#"> Frequently Ask Questions</a></li>
+			</ul>
+		</div>
+		<div class="col-xs-3 paddingtop-bottom">
+			<h6 class="heading7">STORE HOURS</h6>
+			<div class="post">
+				<p>Monday - Saturday: 9am - 11pm</p>
+				<p>Sunday: 10am - 10pm</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/bootstrap.min.js"></script>
+	
+	<script src="../static/js/scripts.js"></script>
+	
+	<!-- data table -->
+	<script src="../static/js/jquery.dataTables.min.js"></script>
+	<script src="../static/js/dataTables.bootstrap.min.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			$('#bookList').DataTable({
+				"lengthMenu":[[5,10,15,20,-1],[5,10,15,20,"All"]],
+				"ordering":false,
+				stateSave:true
+			});
+			
+			$("#bookList").on('page.dt', function() {
+				$('html, body').animate({
+					scrollTop: $('#bookList').offset().top
+				}, 200);
+			});
+		});
+	</script>
+</body>
+</html>
